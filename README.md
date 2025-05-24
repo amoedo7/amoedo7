@@ -7,9 +7,10 @@
 ### Sobre mí
 
 Trabajo desde un celular Android usando **Termux**, **Python** y herramientas libres.  
-Mi enfoque es práctico: construir, automatizar y desplegar sin depender de recursos costosos.
+No uso entornos gráficos ni IDEs pesados. Solo shell, cerebro y ganas.  
+Aprendo rápido, creo soluciones funcionales desde lo mínimo y comparto lo que descubro.
 
-Estoy en modo *low profile* pero activo. Aprendo rápido. Creo soluciones reales desde lo mínimo.
+> *"Prefiero una terminal abierta que mil apps cerradas. Desde el celular, pero pensando en red global."*
 
 ---
 
@@ -24,6 +25,8 @@ Estoy en modo *low profile* pero activo. Aprendo rápido. Creo soluciones reales
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
+![Hacker móvil](https://img.shields.io/badge/Hacker%20m%C3%B3vil-Termux%20Mode%20ON-black?style=flat-square&logo=gnubash)
+
 ---
 
 ### Progreso actual
@@ -35,9 +38,21 @@ Estoy en modo *low profile* pero activo. Aprendo rápido. Creo soluciones reales
 - [ ] Desarrollar herramientas comunitarias móviles
 - [ ] Colaborar en proyectos open-source
 
+![Progress](https://progress-bar.dev/45/?title=Aprendizaje+actual)
+
 ---
 
-### Actividad
+### Mini-Proyectos en curso
+
+- `cel.py`: Identificador de llamadas móviles sin APIs privadas
+- `DesarrollAMO.py`: Generador y deploy automático de proyectos desde Termux
+- `OPUS`: Tokenización descentralizada de acciones humanas
+- `TrucAmo`: Organización digital de torneos de truco
+- `TermAMO`: Escuela de herramientas móviles sin permiso
+
+---
+
+### Actividad reciente
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=amoedo7&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
@@ -47,13 +62,15 @@ Estoy en modo *low profile* pero activo. Aprendo rápido. Creo soluciones reales
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=amoedo7&theme=tokyonight&hide_border=true" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amoedo7&layout=compact&theme=tokyonight" />
+</p>
+
 ---
 
 ### Contacto
 
 - GitHub: [@amoedo7](https://github.com/amoedo7)
-- WhatsApp/IG: En construcción...
+- WhatsApp/IG: *En construcción. Mejor encontrame en el shell.*
 
 ---
-
-> *"Prefiero una terminal abierta que mil apps cerradas. Desde el celular, pero pensando en red global."*
