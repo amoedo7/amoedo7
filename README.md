@@ -25,8 +25,6 @@ Aprendo rápido, creo soluciones funcionales desde lo mínimo y comparto lo que 
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
-![User Móvil](https://img.shields.io/badge/Hacker%20m%C3%B3vil-Termux%20Mode%20ON-black?style=flat-square&logo=gnubash)
-
 ---
 
 ### Progreso actual
