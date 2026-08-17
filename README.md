@@ -1,74 +1,94 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FFAA&center=true&vCenter=true&width=500&lines=Hola%2C+soy+Amo;Termux+User+%7C+Autodidacta+Digital;Codeando+desde+el+bolsillo" alt="Typing SVG" />
+  <strong>DesarrollAMO</strong><br>
+  Tecnología, automatización e IA orientadas a convertir ideas en herramientas utilizables.
 </p>
 
 ---
 
-### Sobre mí
+## Sobre este GitHub
 
-Trabajo desde un celular Android usando **Termux**, **Python** y herramientas libres.  
-No uso entornos gráficos ni IDEs pesados. Solo shell, cerebro y ganas.  
-Aprendo rápido, creo soluciones funcionales desde lo mínimo y comparto lo que descubro.
+Esta es actualmente la cuenta operativa de GitHub utilizada para proyectos de **DesarrollAMO**.
 
-> *"Prefiero una terminal abierta que mil apps cerradas. Desde el celular, pero pensando en red global."*
+El ecosistema está en evolución y reúne experimentos, productos, herramientas internas y proyectos para clientes. Parte del material histórico de esta cuenta corresponde a etapas anteriores de aprendizaje y prototipado.
 
----
-
-### Herramientas que uso
-
-![Termux](https://img.shields.io/badge/Termux-000000?style=flat&logo=linux)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
+> GitHub conserva código e historial. DesarrollAMO es el sistema más amplio que conecta productos, datos, automatización, IA y operación.
 
 ---
 
-### Progreso actual
+## Ecosistema AMO
 
-- [x] Subir proyectos a GitHub desde Termux
-- [x] Automatizar despliegues simples
-- [x] Usar Git de forma directa sin GUI
-- [ ] Integrar APIs externas con autenticación
-- [ ] Desarrollar herramientas comunitarias móviles
-- [ ] Colaborar en proyectos open-source
+Algunos repositorios y líneas de trabajo presentes en esta cuenta:
 
-![Progress](https://progress-bar.dev/45/?title=Aprendizaje+actual)
+- **IAMO** — exploración de la interfaz humano ↔ IA.
+- **DesarrollAmo** — presencia y antecedentes del proyecto DesarrollAMO.
+- **AutoDesarrollAMO** — prototipo histórico de automatización y generación de módulos.
+- **CobrAMO** — línea de trabajo relacionada con cobros y referencias de pago.
+- **PidAmo** — proyecto AMO con frontend/backend asociados.
+- **CriptAmo** — experimentación tecnológica dentro del ecosistema.
+- **landings** — landings, plantillas y recursos reutilizables.
 
----
-
-### Mini-Proyectos en curso
-
-- `cel.py`: Identificador de llamadas móviles sin APIs privadas
-- `DesarrollAMO.py`: Generador y deploy automático de proyectos desde Termux
-- `OPUS`: Tokenización descentralizada de acciones humanas
-- `TrucAmo`: Organización digital de torneos de truco
-- `TermAMO`: Escuela de herramientas móviles sin permiso
+No todos los repositorios representan el estado actual de producción; algunos se mantienen por historia, aprendizaje o experimentación.
 
 ---
 
-### Actividad reciente
+## Arquitectura que estamos construyendo
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=amoedo7&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-</p>
+```text
+                    DesarrollAMO
+                         │
+       ┌─────────────────┼─────────────────┐
+       │                 │                 │
+     GitHub           Supabase          Netlify
+       │                 │                 │
+       └─────────────────┼─────────────────┘
+                         │
+                    PlataformAMO
+                         │
+                        DAMO
+                         │
+                  IA + automatización
+```
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=amoedo7&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amoedo7&layout=compact&theme=tokyonight" />
-</p>
+La intención es que el código, los datos, los despliegues y la operación empresarial puedan relacionarse sin depender de una sola herramienta o proveedor de IA.
 
 ---
 
-### Contacto
+## Branding compartido
 
-- GitHub: [@amoedo7](https://github.com/amoedo7)
-- WhatsApp/IG: *En construcción. Mejor encontrame en el shell.*
+El repositorio `landings` contiene ahora un directorio `branding/` para empezar a centralizar la identidad reutilizable de DesarrollAMO:
+
+- tokens de marca;
+- firma HTML/CSS;
+- documentación de uso;
+- base para futuros logos, footers, favicons y componentes.
+
+Actualmente esa definición es **provisional** hasta completar la auditoría de los sitios de producción y convertirla en fuente canónica.
 
 ---
+
+## Principios
+
+- tecnología útil antes que complejidad innecesaria;
+- IA como herramienta, no como dueño de los datos;
+- componentes reutilizables en lugar de copiar y pegar proyectos completos;
+- automatización con supervisión y trazabilidad;
+- posibilidad de cambiar modelos, proveedores e infraestructura;
+- construir desde recursos reales y evolucionar progresivamente.
+
+---
+
+## Tecnologías y plataformas
+
+`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Linux` · `Termux` · `Git` · `GitHub` · `Supabase` · `Netlify` · `IA / agentes`
+
+---
+
+## Sitio
+
+**DesarrollAMO:** https://desarrollamo.com.ar/
+
+**GitHub operativo actual:** [@amoedo7](https://github.com/amoedo7)
+
+---
+
+<sub>La estructura de cuentas y repositorios está siendo organizada progresivamente. La prioridad actual es preservar proyectos e historial mientras DesarrollAMO consolida su infraestructura.</sub>
