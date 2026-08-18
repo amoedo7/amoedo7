@@ -7,7 +7,7 @@ import urllib.request
 import urllib.error
 
 DEFAULT_ENDPOINT = "https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-api"
-
+DEFAULT_MEDIA_ENDPOINT = "https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-media"
 
 def call(action, payload=None):
     token = os.environ.get("MESAAMO_AGENT_TOKEN", "").strip()
@@ -25,7 +25,7 @@ def call(action, payload=None):
         headers={
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
-            "User-Agent": "MesaAMO-AgentTool/0.3.0",
+            "User-Agent": "MesaAMO-AgentTool/0.4.0",
         },
     )
     try:
@@ -34,7 +34,6 @@ def call(action, payload=None):
     except urllib.error.HTTPError as e:
         print(e.read().decode() or str(e), file=sys.stderr)
         raise SystemExit(e.code)
-
 
 def main():
     p = argparse.ArgumentParser(description="MesaAMO agent helper")
@@ -52,6 +51,10 @@ def main():
     r.add_argument("--drive-id")
     r.add_argument("--media-type", default="image/jpeg")
     r.add_argument("--sha256")
+
+    d = sub.add_parser("download")
+    d.add_argument("item_id")
+    d.add_argument("output")
 
     c = sub.add_parser("claim")
     c.add_argument("item_id")
@@ -86,27 +89,36 @@ def main():
             "media_type": a.media_type,
             "sha256": a.sha256,
         })
+    elif a.cmd == "download":
+        token = os.environ.get("MESAAMO_AGENT_TOKEN", "").strip()
+        if not token:
+            raise SystemExit("FALTA: MESAAMO_AGENT_TOKEN")
+        media = os.environ.get("MESAAMO_MEDIA_ENDPOINT", DEFAULT_MEDIA_ENDPOINT)
+        url = f"{media}?action=media_url&item_id={a.item_id}"
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "User-Agent": "MesaAMO-AgentTool/0.4.0"})
+        with urllib.request.urlopen(req, timeout=20) as res:
+            info = json.loads(res.read().decode())
+        if not info.get("ok"):
+            raise SystemExit(json.dumps(info))
+        with urllib.request.urlopen(info["signed_url"], timeout=60) as res, open(a.output, "wb") as out:
+            out.write(res.read())
+        print(json.dumps({"ok": True, "item_id": a.item_id, "output": a.output}))
     elif a.cmd == "claim":
         call("claim", {"item_id": a.item_id})
     elif a.cmd == "update":
         payload = {"item_id": a.item_id}
         mapping = {
-            "progress": a.progress,
-            "status": a.status,
-            "identified_capability": a.capability,
-            "target_project": a.target,
-            "route_summary": a.route,
-            "latest_note": a.note,
-            "error_code": a.error_code,
-            "error_message": a.error_message,
+            "progress": a.progress, "status": a.status,
+            "identified_capability": a.capability, "target_project": a.target,
+            "route_summary": a.route, "latest_note": a.note,
+            "error_code": a.error_code, "error_message": a.error_message,
         }
-        payload.update({k: v for k, v in mapping.items() if v is not None})
+        payload.update({k:v for k,v in mapping.items() if v is not None})
         call("update", payload)
     elif a.cmd == "complete":
         call("complete", {"item_id": a.item_id, "latest_note": a.note})
     elif a.cmd == "release":
         call("release", {"item_id": a.item_id})
-
 
 if __name__ == "__main__":
     main()
