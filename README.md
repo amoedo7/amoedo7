@@ -16,46 +16,43 @@
 
 DesarrollAMO transforma problemas y procesos reales en soluciones digitales concretas.
 
-Trabajamos con:
-
-- sitios y aplicaciones web;
-- herramientas Android y Termux;
-- automatización con Bash, PowerShell y Python;
-- APIs, JSON y bases de datos;
-- dashboards y utilidades operativas;
-- auditoría técnica y mejora de sistemas existentes;
-- integraciones entre servicios y dispositivos.
+Trabajamos con sitios y aplicaciones web, Android/Termux, automatización para Windows/Linux, APIs, JSON, bases de datos, dashboards, auditoría técnica e integraciones entre servicios y dispositivos.
 
 La herramienta cambia según el problema. El objetivo no: **que la solución funcione en el entorno donde realmente se va a usar**.
 
 ---
 
-## Prueba funcional
+## Demos que podés probar
 
-### Cross-device URL Check
+### 1. [Cross-device URL Check](https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check)
 
-Un mismo control operativo ejecutándose en entornos distintos y produciendo el mismo contrato JSON.
+El mismo chequeo HTTP desde Android/Termux, Linux/macOS, Windows y Python, conservando un contrato JSON común.
 
-| Entorno | Implementación |
-|---|---|
-| Android / Termux | Bash + curl |
-| Linux / macOS | Bash + curl |
-| Windows | PowerShell |
-| Multiplataforma | Python 3 |
+### 2. [File Integrity · SHA-256](https://github.com/amoedo7/landings/tree/main/demos/file-integrity)
 
-```json
-{
-  "schema": "desarrollamo.url-check.v1",
-  "url": "https://desarrollamo.com.ar",
-  "status": 200,
-  "ok": true,
-  "elapsed_ms": 184
-}
+Verificación local de integridad de archivos mediante Bash, PowerShell y Python. Las implementaciones entregan el mismo schema y tienen una autoprueba que compara resultados.
+
+### 3. [Browser Data Toolbox](https://github.com/amoedo7/landings/tree/main/demos/browser-data-toolbox)
+
+Mini herramienta web sin backend para validar/formatear JSON, calcular SHA-256, trabajar con Base64 e inspeccionar URLs. Todo ocurre en el navegador.
+
+**[Ver catálogo completo →](https://github.com/amoedo7/landings/tree/main/demos)**
+
+---
+
+## Prueba multiplataforma
+
+El repositorio `landings` incluye validación automática del contrato de File Integrity en **Ubuntu, macOS y Windows** mediante GitHub Actions.
+
+```text
+mismo problema
+    ↓
+implementaciones distintas
+    ↓
+misma salida verificable
 ```
 
-**[Abrir el demo, ver el código y ejecutarlo →](https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check)**
-
-Este es el criterio para lo nuevo que se publique: una idea interesante vale más cuando además existe una forma de probarla.
+Ese es uno de los criterios que queremos repetir en herramientas futuras.
 
 ---
 
@@ -80,34 +77,17 @@ Interfaz desplegada para centralizar alternativas y referencias de cobro.
 ### [Landings](https://github.com/amoedo7/landings)
 Infraestructura web reutilizable, identidad visual y demos funcionales de DesarrollAMO.
 
-### [Repositorio de demos](https://github.com/amoedo7/landings/tree/main/demos)
-Piezas pequeñas diseñadas para demostrar capacidades concretas sin depender de una presentación comercial.
-
 ---
 
 ## Cómo trabajamos
 
 ```text
-NECESIDAD
-   ↓
-ENTENDER
-   ↓
-DISEÑAR
-   ↓
-CONSTRUIR
-   ↓
-PROBAR
-   ↓
-DESPLEGAR
-   ↓
-MEDIR Y MEJORAR
+NECESIDAD → ENTENDER → DISEÑAR → CONSTRUIR → PROBAR → DESPLEGAR → MEJORAR
 ```
 
 No hace falta llegar con una especificación técnica. Se puede empezar por una frase simple:
 
 > “Tengo este problema y quiero que deje de hacerse manualmente.”
-
-A partir de ahí se define qué vale la pena construir y qué no.
 
 ---
 
@@ -119,9 +99,9 @@ A partir de ahí se define qué vale la pena construir y qué no.
 
 ## Sobre los repositorios
 
-Esta cuenta conserva tanto trabajo actual como prototipos y experimentos históricos. Los proyectos nuevos orientados a clientes se van destacando sólo cuando tienen una implementación, demo o despliegue que los respalda.
+Esta cuenta conserva trabajo actual, prototipos y experimentos históricos. Lo nuevo orientado a clientes se destaca sólo cuando existe una implementación, demo, prueba o despliegue que lo respalda.
 
-Para quien quiera revisar el inventario técnico completo, existe [`PROJECTS.md`](PROJECTS.md).
+Inventario técnico: [`PROJECTS.md`](PROJECTS.md).
 
 ---
 
