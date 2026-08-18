@@ -2,162 +2,132 @@
 
 # desarroll**AMO**
 
-### Estructura · Inteligencia · Impacto
+### Software · automatización · sistemas
 
-**Convertimos ideas, procesos y problemas reales en software, automatización e inteligencia aplicada.**
+**Construimos herramientas digitales que se pueden abrir, ejecutar, probar y mejorar.**
 
-[🌐 Sitio](https://desarrollamo.com.ar/) · [🏢 Ecosistema](https://github.com/amoedo7/landings) · [🗺️ Inventario](PROJECTS.md)
+[🌐 desarrollamo.com.ar](https://desarrollamo.com.ar/) · [🧪 Demos](https://github.com/amoedo7/landings/tree/main/demos) · [💻 Código](https://github.com/amoedo7?tab=repositories)
 
 </div>
 
 ---
 
-## Qué es DesarrollAMO
+## Qué hacemos
 
-DesarrollAMO no es un único producto ni una sola IA. Es un **ecosistema de oficinas especializadas** que trabajan sobre una misma estructura: investigar, entender, construir, verificar, operar y aprender.
+DesarrollAMO transforma problemas y procesos reales en soluciones digitales concretas.
 
-```text
-                         DESARROLLAMO
-                              │
-                       ┌──────┴──────┐
-                       │ EstructurAMO │
-                       │ dirección    │
-                       └──────┬──────┘
-                              │
-          ┌───────────────────┼───────────────────┐
-          │                   │                   │
-       IA / DAMO          OFICINAS           OPERACIÓN
-          │                   │                   │
-   agentes · memoria     especialización     clientes · ventas
-   reglas · skills       y ownership         entregas · cobros
-          │                   │                   │
-          └───────────────────┼───────────────────┘
-                              │
-                  datos · APIs · infra · logs
-```
+Trabajamos con:
 
-La estructura organizacional actual está documentada en `tools/mesaamo-worker/ESTRUCTURAMO.md`: cada unidad de trabajo tiene un solo owner, puede sumar revisores y sigue un ciclo explícito de evolución continua.
+- sitios y aplicaciones web;
+- herramientas Android y Termux;
+- automatización con Bash, PowerShell y Python;
+- APIs, JSON y bases de datos;
+- dashboards y utilidades operativas;
+- auditoría técnica y mejora de sistemas existentes;
+- integraciones entre servicios y dispositivos.
 
-### Loop de trabajo
-
-`BUSCAR → ENTENDER → UBICAR → HACER → VERIFICAR → APRENDER → CERRAR → VOLVER ↻`
-
-La meta no es crear más bots. Es **aumentar capacidad sin aumentar colisiones, dependencia o gasto innecesario**.
+La herramienta cambia según el problema. El objetivo no: **que la solución funcione en el entorno donde realmente se va a usar**.
 
 ---
 
-## Oficinas
+## Prueba funcional
 
-| Oficina | Misión |
+### Cross-device URL Check
+
+Un mismo control operativo ejecutándose en entornos distintos y produciendo el mismo contrato JSON.
+
+| Entorno | Implementación |
 |---|---|
-| **EstructurAMO** | Dirección, ownership, prioridades y gobernanza |
-| **DesarrolloAMO** | Arquitectura, implementación, pruebas e integración |
-| **SecurityAMO** | Seguridad, secretos, hardening y auditoría |
-| **InfraAMO** | Infraestructura, red, despliegues y resiliencia |
-| **OperAMO** | Procesos, colas, recuperación y continuidad |
-| **WebAMO** | Web, UX/UI, accesibilidad y conversión |
-| **DatabaseAMO** | PostgreSQL, Supabase, migraciones y datos |
-| **MarketingAMO** | Marca, contenido, campañas y crecimiento |
-| **ContaduríaAMO** | Costes, balances, presupuestos y lectura económica |
-| **InvestigAMO** | Investigación, fuentes, análisis y evidencia |
-| **IAMO / DAMO** | Interfaz humano ↔ IA, agentes, memoria y automatización |
-| **CobrAMO** | Referencias y flujo de cobro del ecosistema |
-| **RagtAMO** | Datos, reportes y evidencia de campo |
-| **VideAMO** | Video, edición y producción multimedia |
-| **CamarAMO** | Captura visual y documental |
-| **ChoferAMO** | Rutas, flota, logística e incidencias |
+| Android / Termux | Bash + curl |
+| Linux / macOS | Bash + curl |
+| Windows | PowerShell |
+| Multiplataforma | Python 3 |
 
-> El portal visual del ecosistema se está construyendo en [`landings`](https://github.com/amoedo7/landings), que es la infraestructura web reutilizable activa de esta cuenta.
-
----
-
-## Para clientes
-
-No hace falta llegar sabiendo qué tecnología usar ni qué oficina necesitás.
-
-Podés venir con:
-
-- una idea que todavía no existe;
-- un proceso manual que consume tiempo;
-- una web o app que necesita mejorar;
-- datos que hoy están desordenados;
-- una operación que necesita automatización;
-- un prototipo que tiene que convertirse en producto;
-- un problema concreto que todavía no tiene solución clara.
-
-La estructura decide qué capacidades hacen falta, construye una solución verificable y conserva el conocimiento para seguir evolucionándola.
-
-**Sitio:** https://desarrollamo.com.ar/
-
----
-
-## Arquitectura
-
-```text
-GitHub ─────────────── código e historial
-   │
-Supabase ───────────── datos y backend empresarial
-   │
-Netlify ────────────── presencia y despliegues web
-   │
-PlataformAMO ───────── operación empresarial
-   │
-DAMO / OpenClaw ────── ejecución y automatización
-   │
-Modelos / proveedores  inteligencia intercambiable
+```json
+{
+  "schema": "desarrollamo.url-check.v1",
+  "url": "https://desarrollamo.com.ar",
+  "status": 200,
+  "ok": true,
+  "elapsed_ms": 184
+}
 ```
 
-Principio central: **el código, los datos, las decisiones y la operación pertenecen al ecosistema; el proveedor de IA puede cambiar.**
+**[Abrir el demo, ver el código y ejecutarlo →](https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check)**
+
+Este es el criterio para lo nuevo que se publique: una idea interesante vale más cuando además existe una forma de probarla.
 
 ---
 
-## Repositorios
+## Capacidades
 
-Esta cuenta contiene productos actuales, infraestructura reutilizable, prototipos históricos, experimentos y material de aprendizaje. No se intenta hacer pasar todo por producción.
+| Área | Qué podemos construir |
+|---|---|
+| **Web** | landings, paneles, formularios, herramientas internas, frontends |
+| **Apps / móvil** | aplicaciones Android, utilidades y flujos pensados para celular |
+| **Automatización** | scripts y tareas repetibles para Windows, Linux, Android y servidores |
+| **Datos** | APIs, PostgreSQL, Supabase, JSON, migraciones e integraciones |
+| **Operación** | dashboards, reportes, seguimiento, cobros y herramientas de trabajo |
+| **Auditoría** | revisión técnica, compatibilidad, seguridad, errores y oportunidades de mejora |
 
-Cada repositorio revisado usa progresivamente:
+---
+
+## Ejemplos públicos
+
+### [CobrAMO](https://cobramo.netlify.app/)
+Interfaz desplegada para centralizar alternativas y referencias de cobro.
+
+### [Landings](https://github.com/amoedo7/landings)
+Infraestructura web reutilizable, identidad visual y demos funcionales de DesarrollAMO.
+
+### [Repositorio de demos](https://github.com/amoedo7/landings/tree/main/demos)
+Piezas pequeñas diseñadas para demostrar capacidades concretas sin depender de una presentación comercial.
+
+---
+
+## Cómo trabajamos
 
 ```text
-amo.project.json
-schema: desarrollamo.project.v1
+NECESIDAD
+   ↓
+ENTENDER
+   ↓
+DISEÑAR
+   ↓
+CONSTRUIR
+   ↓
+PROBAR
+   ↓
+DESPLEGAR
+   ↓
+MEDIR Y MEJORAR
 ```
 
-El inventario completo y su estado real está en **[PROJECTS.md](PROJECTS.md)**.
+No hace falta llegar con una especificación técnica. Se puede empezar por una frase simple:
 
-Algunas líneas visibles:
+> “Tengo este problema y quiero que deje de hacerse manualmente.”
 
-- **landings** — infraestructura web y branding reutilizable;
-- **IAMO** — antecedente de la interfaz humano ↔ IA;
-- **CobrAMO** — línea de trabajo de cobros;
-- **PidAmo** — producto vertical histórico;
-- **CriptAmo** — experimentación tecnológica histórica;
-- **AutoDesarrollAMO** — antecedente de automatización;
-- **DesarrollAmo** — snapshot histórico de presencia web.
+A partir de ahí se define qué vale la pena construir y qué no.
 
 ---
 
-## Principios
+## Tecnología
 
-- tecnología útil antes que complejidad innecesaria;
-- IA como herramienta, no como dueña de los datos;
-- una fuente de verdad clara por etapa;
-- componentes reutilizables en lugar de clones;
-- automatización con supervisión y trazabilidad;
-- seguridad antes de llamar “producción” a un sistema;
-- posibilidad de cambiar modelos, proveedores e infraestructura;
-- aprender del trabajo realizado sin gastar recursos por estar inactivo.
+`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Bash` · `PowerShell` · `Linux` · `Termux` · `Git` · `GitHub` · `PostgreSQL` · `Supabase` · `Netlify` · `APIs` · `JSON`
 
 ---
 
-## Stack que aparece en el ecosistema
+## Sobre los repositorios
 
-`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Linux` · `Termux` · `Git` · `GitHub` · `Supabase` · `Netlify` · `PostgreSQL` · `IA / agentes`
+Esta cuenta conserva tanto trabajo actual como prototipos y experimentos históricos. Los proyectos nuevos orientados a clientes se van destacando sólo cuando tienen una implementación, demo o despliegue que los respalda.
+
+Para quien quiera revisar el inventario técnico completo, existe [`PROJECTS.md`](PROJECTS.md).
 
 ---
 
 <div align="center">
 
 **DesarrollAMO**  
-*Traducimos tus ideas a tecnología.*
+*Traducimos problemas a tecnología útil.*
 
 </div>
