@@ -1,111 +1,163 @@
-<p align="center">
-  <strong>DesarrollAMO</strong><br>
-  Tecnología, automatización e IA orientadas a convertir ideas en herramientas utilizables.
-</p>
+<div align="center">
+
+# desarroll**AMO**
+
+### Estructura · Inteligencia · Impacto
+
+**Convertimos ideas, procesos y problemas reales en software, automatización e inteligencia aplicada.**
+
+[🌐 Sitio](https://desarrollamo.com.ar/) · [🏢 Ecosistema](https://github.com/amoedo7/landings) · [🗺️ Inventario](PROJECTS.md)
+
+</div>
 
 ---
 
-## Sobre este GitHub
+## Qué es DesarrollAMO
 
-Esta es actualmente la cuenta operativa de GitHub utilizada para proyectos de **DesarrollAMO**.
-
-El ecosistema está en evolución y reúne experimentos, productos, herramientas internas y proyectos para clientes. Parte del material histórico de esta cuenta corresponde a etapas anteriores de aprendizaje y prototipado.
-
-> GitHub conserva código e historial. DesarrollAMO es el sistema más amplio que conecta productos, datos, automatización, IA y operación.
-
-En agosto de 2026 se realizó una primera normalización de los repositorios existentes: cada proyecto revisado documenta ahora su estado real y contiene `amo.project.json` para que pueda ser inventariado por herramientas AMO.
-
-**Inventario completo:** [PROJECTS.md](PROJECTS.md)
-
----
-
-## Ecosistema AMO
-
-Algunos repositorios y líneas de trabajo presentes en esta cuenta:
-
-- **IAMO** — exploración de la interfaz humano ↔ IA.
-- **DesarrollAmo** — presencia y antecedentes del proyecto DesarrollAMO.
-- **AutoDesarrollAMO** — prototipo histórico de automatización y generación de módulos.
-- **CobrAMO** — línea de trabajo relacionada con cobros y referencias de pago.
-- **PidAmo** — proyecto AMO con frontend/backend asociados.
-- **CriptAmo** — experimentación tecnológica dentro del ecosistema.
-- **landings** — landings, plantillas y recursos reutilizables.
-
-No todos los repositorios representan el estado actual de producción; algunos se mantienen por historia, aprendizaje o experimentación. El inventario distingue explícitamente entre activos/reutilizables, prototipos históricos, placeholders y fuentes canónicas de cada etapa.
-
----
-
-## Arquitectura que estamos construyendo
+DesarrollAMO no es un único producto ni una sola IA. Es un **ecosistema de oficinas especializadas** que trabajan sobre una misma estructura: investigar, entender, construir, verificar, operar y aprender.
 
 ```text
-                    DesarrollAMO
-                         │
-       ┌─────────────────┼─────────────────┐
-       │                 │                 │
-     GitHub           Supabase          Netlify
-       │                 │                 │
-       └─────────────────┼─────────────────┘
-                         │
-                    PlataformAMO
-                         │
-                        DAMO
-                         │
-                  IA + automatización
+                         DESARROLLAMO
+                              │
+                       ┌──────┴──────┐
+                       │ EstructurAMO │
+                       │ dirección    │
+                       └──────┬──────┘
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+       IA / DAMO          OFICINAS           OPERACIÓN
+          │                   │                   │
+   agentes · memoria     especialización     clientes · ventas
+   reglas · skills       y ownership         entregas · cobros
+          │                   │                   │
+          └───────────────────┼───────────────────┘
+                              │
+                  datos · APIs · infra · logs
 ```
 
-La intención es que el código, los datos, los despliegues y la operación empresarial puedan relacionarse sin depender de una sola herramienta o proveedor de IA.
+La estructura organizacional actual está documentada en `tools/mesaamo-worker/ESTRUCTURAMO.md`: cada unidad de trabajo tiene un solo owner, puede sumar revisores y sigue un ciclo explícito de evolución continua.
+
+### Loop de trabajo
+
+`BUSCAR → ENTENDER → UBICAR → HACER → VERIFICAR → APRENDER → CERRAR → VOLVER ↻`
+
+La meta no es crear más bots. Es **aumentar capacidad sin aumentar colisiones, dependencia o gasto innecesario**.
 
 ---
 
-## Branding compartido
+## Oficinas
 
-El repositorio `landings` contiene un directorio `branding/` para centralizar progresivamente la identidad reutilizable de DesarrollAMO:
+| Oficina | Misión |
+|---|---|
+| **EstructurAMO** | Dirección, ownership, prioridades y gobernanza |
+| **DesarrolloAMO** | Arquitectura, implementación, pruebas e integración |
+| **SecurityAMO** | Seguridad, secretos, hardening y auditoría |
+| **InfraAMO** | Infraestructura, red, despliegues y resiliencia |
+| **OperAMO** | Procesos, colas, recuperación y continuidad |
+| **WebAMO** | Web, UX/UI, accesibilidad y conversión |
+| **DatabaseAMO** | PostgreSQL, Supabase, migraciones y datos |
+| **MarketingAMO** | Marca, contenido, campañas y crecimiento |
+| **ContaduríaAMO** | Costes, balances, presupuestos y lectura económica |
+| **InvestigAMO** | Investigación, fuentes, análisis y evidencia |
+| **IAMO / DAMO** | Interfaz humano ↔ IA, agentes, memoria y automatización |
+| **CobrAMO** | Referencias y flujo de cobro del ecosistema |
+| **RagtAMO** | Datos, reportes y evidencia de campo |
+| **VideAMO** | Video, edición y producción multimedia |
+| **CamarAMO** | Captura visual y documental |
+| **ChoferAMO** | Rutas, flota, logística e incidencias |
 
-- tokens de marca;
-- firma HTML/CSS;
-- documentación de uso;
-- base para futuros logos, footers, favicons y componentes.
-
-Actualmente esa definición es **provisional** hasta completar la auditoría de los sitios de producción y convertirla en fuente canónica.
+> El portal visual del ecosistema se está construyendo en [`landings`](https://github.com/amoedo7/landings), que es la infraestructura web reutilizable activa de esta cuenta.
 
 ---
 
-## Convención de proyecto
+## Para clientes
 
-Los repositorios normalizados utilizan:
+No hace falta llegar sabiendo qué tecnología usar ni qué oficina necesitás.
+
+Podés venir con:
+
+- una idea que todavía no existe;
+- un proceso manual que consume tiempo;
+- una web o app que necesita mejorar;
+- datos que hoy están desordenados;
+- una operación que necesita automatización;
+- un prototipo que tiene que convertirse en producto;
+- un problema concreto que todavía no tiene solución clara.
+
+La estructura decide qué capacidades hacen falta, construye una solución verificable y conserva el conocimiento para seguir evolucionándola.
+
+**Sitio:** https://desarrollamo.com.ar/
+
+---
+
+## Arquitectura
+
+```text
+GitHub ─────────────── código e historial
+   │
+Supabase ───────────── datos y backend empresarial
+   │
+Netlify ────────────── presencia y despliegues web
+   │
+PlataformAMO ───────── operación empresarial
+   │
+DAMO / OpenClaw ────── ejecución y automatización
+   │
+Modelos / proveedores  inteligencia intercambiable
+```
+
+Principio central: **el código, los datos, las decisiones y la operación pertenecen al ecosistema; el proveedor de IA puede cambiar.**
+
+---
+
+## Repositorios
+
+Esta cuenta contiene productos actuales, infraestructura reutilizable, prototipos históricos, experimentos y material de aprendizaje. No se intenta hacer pasar todo por producción.
+
+Cada repositorio revisado usa progresivamente:
 
 ```text
 amo.project.json
 schema: desarrollamo.project.v1
 ```
 
-El manifiesto describe, entre otras cosas, tipo de proyecto, ciclo de vida, visibilidad, si el repo es fuente de verdad, URL de producción conocida y relaciones con otros repos.
+El inventario completo y su estado real está en **[PROJECTS.md](PROJECTS.md)**.
+
+Algunas líneas visibles:
+
+- **landings** — infraestructura web y branding reutilizable;
+- **IAMO** — antecedente de la interfaz humano ↔ IA;
+- **CobrAMO** — línea de trabajo de cobros;
+- **PidAmo** — producto vertical histórico;
+- **CriptAmo** — experimentación tecnológica histórica;
+- **AutoDesarrollAMO** — antecedente de automatización;
+- **DesarrollAmo** — snapshot histórico de presencia web.
 
 ---
 
 ## Principios
 
 - tecnología útil antes que complejidad innecesaria;
-- IA como herramienta, no como dueño de los datos;
-- componentes reutilizables en lugar de copiar y pegar proyectos completos;
+- IA como herramienta, no como dueña de los datos;
+- una fuente de verdad clara por etapa;
+- componentes reutilizables en lugar de clones;
 - automatización con supervisión y trazabilidad;
+- seguridad antes de llamar “producción” a un sistema;
 - posibilidad de cambiar modelos, proveedores e infraestructura;
-- construir desde recursos reales y evolucionar progresivamente.
+- aprender del trabajo realizado sin gastar recursos por estar inactivo.
 
 ---
 
-## Tecnologías y plataformas
+## Stack que aparece en el ecosistema
 
-`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Linux` · `Termux` · `Git` · `GitHub` · `Supabase` · `Netlify` · `IA / agentes`
-
----
-
-## Sitio
-
-**DesarrollAMO:** https://desarrollamo.com.ar/
-
-**GitHub operativo actual:** [@amoedo7](https://github.com/amoedo7)
+`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Linux` · `Termux` · `Git` · `GitHub` · `Supabase` · `Netlify` · `PostgreSQL` · `IA / agentes`
 
 ---
 
-<sub>La estructura de cuentas y repositorios se organiza progresivamente preservando proyectos e historial mientras DesarrollAMO consolida su infraestructura.</sub>
+<div align="center">
+
+**DesarrollAMO**  
+*Traducimos tus ideas a tecnología.*
+
+</div>
