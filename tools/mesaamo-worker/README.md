@@ -1,12 +1,19 @@
-# MesaAMO Worker v0.3.0
+# MesaAMO Worker v0.4.0
 
-Bootstrap helper for DAMO. This directory contains no credentials.
+Operational helper for DAMO. This directory contains **no credentials**.
 
-Endpoint:
+## Architecture
 
-`https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-api`
+Google Drive is the human/archive layer. Agents do **not** need Google OAuth.
 
-Install:
+Operational media lives in the private Supabase Storage bucket behind `mesa-media`:
+
+- coordination: `https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-api`
+- private media gateway: `https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-media`
+
+MesaAMO Android ingests working copies into the private factory. DAMO obtains a short-lived signed media URL using its existing agent credential.
+
+## Install / update
 
 ```bash
 mkdir -p ~/.local/share/desarrollamo/mesaamo/bin
@@ -15,20 +22,28 @@ curl -fsSL https://raw.githubusercontent.com/amoedo7/amoedo7/main/tools/mesaamo-
 chmod 700 ~/.local/share/desarrollamo/mesaamo/bin/mesa_agent.py
 ```
 
-Runtime variables must stay outside Git and Drive:
+Runtime variables stay outside Git and Drive:
 
 ```bash
 export MESAAMO_ENDPOINT='https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-api'
-export MESAAMO_AGENT_TOKEN='<provided separately>'
+export MESAAMO_MEDIA_ENDPOINT='https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-media'
+export MESAAMO_AGENT_TOKEN='<stored locally; never commit>'
 ```
 
-Smoke test:
+## Commands
 
 ```bash
-python ~/.local/share/desarrollamo/mesaamo/bin/mesa_agent.py heartbeat ONLINE 'Bootstrap MesaAMO'
-python ~/.local/share/desarrollamo/mesaamo/bin/mesa_agent.py queue --limit 5
+python mesa_agent.py heartbeat ONLINE 'Disponible'
+python mesa_agent.py queue --limit 5
+python mesa_agent.py claim <ITEM_ID>
+python mesa_agent.py download <ITEM_ID> /tmp/mesa-item.jpg
+python mesa_agent.py update <ITEM_ID> --status ANALYZING --progress 10 --note 'Analizando capacidad'
+python mesa_agent.py complete <ITEM_ID> --note 'Adaptación finalizada y verificada'
+python mesa_agent.py release <ITEM_ID>
 ```
+
+`download` asks `mesa-media` for a time-limited signed URL. The bucket remains private and the Supabase server secret is never exposed to DAMO.
 
 Scopes expected for DAMO: `heartbeat`, `queue`, `register_item`, `claim`, `update`, `complete`, `release`.
 
-Google Drive access is independent from Mesa API authentication. Configure it once via official Google OAuth in rclone; do not store Google passwords or tokens in Git.
+Polling, heartbeat, queue reads and downloads are deterministic. They do not require MiniMax/LLM calls.
