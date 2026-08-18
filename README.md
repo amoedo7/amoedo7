@@ -13,6 +13,10 @@ El ecosistema está en evolución y reúne experimentos, productos, herramientas
 
 > GitHub conserva código e historial. DesarrollAMO es el sistema más amplio que conecta productos, datos, automatización, IA y operación.
 
+En agosto de 2026 se realizó una primera normalización de los repositorios existentes: cada proyecto revisado documenta ahora su estado real y contiene `amo.project.json` para que pueda ser inventariado por herramientas AMO.
+
+**Inventario completo:** [PROJECTS.md](PROJECTS.md)
+
 ---
 
 ## Ecosistema AMO
@@ -27,7 +31,7 @@ Algunos repositorios y líneas de trabajo presentes en esta cuenta:
 - **CriptAmo** — experimentación tecnológica dentro del ecosistema.
 - **landings** — landings, plantillas y recursos reutilizables.
 
-No todos los repositorios representan el estado actual de producción; algunos se mantienen por historia, aprendizaje o experimentación.
+No todos los repositorios representan el estado actual de producción; algunos se mantienen por historia, aprendizaje o experimentación. El inventario distingue explícitamente entre activos/reutilizables, prototipos históricos, placeholders y fuentes canónicas de cada etapa.
 
 ---
 
@@ -55,7 +59,7 @@ La intención es que el código, los datos, los despliegues y la operación empr
 
 ## Branding compartido
 
-El repositorio `landings` contiene ahora un directorio `branding/` para empezar a centralizar la identidad reutilizable de DesarrollAMO:
+El repositorio `landings` contiene un directorio `branding/` para centralizar progresivamente la identidad reutilizable de DesarrollAMO:
 
 - tokens de marca;
 - firma HTML/CSS;
@@ -63,6 +67,19 @@ El repositorio `landings` contiene ahora un directorio `branding/` para empezar 
 - base para futuros logos, footers, favicons y componentes.
 
 Actualmente esa definición es **provisional** hasta completar la auditoría de los sitios de producción y convertirla en fuente canónica.
+
+---
+
+## Convención de proyecto
+
+Los repositorios normalizados utilizan:
+
+```text
+amo.project.json
+schema: desarrollamo.project.v1
+```
+
+El manifiesto describe, entre otras cosas, tipo de proyecto, ciclo de vida, visibilidad, si el repo es fuente de verdad, URL de producción conocida y relaciones con otros repos.
 
 ---
 
@@ -91,4 +108,4 @@ Actualmente esa definición es **provisional** hasta completar la auditoría de 
 
 ---
 
-<sub>La estructura de cuentas y repositorios está siendo organizada progresivamente. La prioridad actual es preservar proyectos e historial mientras DesarrollAMO consolida su infraestructura.</sub>
+<sub>La estructura de cuentas y repositorios se organiza progresivamente preservando proyectos e historial mientras DesarrollAMO consolida su infraestructura.</sub>
