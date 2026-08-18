@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""MesaAMO / MapaAMO worker helper v0.5.0. No credentials are embedded."""
+"""MesaAMO / MapaAMO worker helper v0.5.1. No credentials are embedded."""
 import argparse, json, os, sys, urllib.request, urllib.error
 
-VERSION = "0.5.0"
+VERSION = "0.5.1"
 DEFAULT_ENDPOINT = "https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-api"
 DEFAULT_MEDIA_ENDPOINT = "https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-media"
+DEFAULT_ANALYSIS_ENDPOINT = "https://ydmnavyadpztydontaqh.supabase.co/functions/v1/mesa-analysis"
 
 def token():
     t=os.environ.get("MESAAMO_AGENT_TOKEN","").strip()
@@ -30,6 +31,7 @@ def main():
     d=s.add_parser("download"); d.add_argument("item_id"); d.add_argument("output")
     c=s.add_parser("claim"); c.add_argument("item_id")
     u=s.add_parser("update"); u.add_argument("item_id"); u.add_argument("--progress",type=int); u.add_argument("--status"); u.add_argument("--capability"); u.add_argument("--target"); u.add_argument("--route"); u.add_argument("--note"); u.add_argument("--error-code"); u.add_argument("--error-message")
+    sa=s.add_parser("source-analyzed"); sa.add_argument("item_id"); sa.add_argument("summary"); sa.add_argument("--disposition",default="INVESTIGAR")
     cc=s.add_parser("capability-create"); cc.add_argument("source_item_id"); cc.add_argument("title"); cc.add_argument("--description"); cc.add_argument("--slug"); cc.add_argument("--decision",default="INVESTIGAR"); cc.add_argument("--target",action="append",default=[]); cc.add_argument("--route")
     cl=s.add_parser("capability-list"); cl.add_argument("--source")
     cq=s.add_parser("capability-claim"); cq.add_argument("capability_id")
@@ -58,6 +60,14 @@ def main():
     elif a.cmd=="claim": call("claim",{"item_id":a.item_id})
     elif a.cmd=="update":
         m={"progress":a.progress,"status":a.status,"identified_capability":a.capability,"target_project":a.target,"route_summary":a.route,"latest_note":a.note,"error_code":a.error_code,"error_message":a.error_message}; call("update",{"item_id":a.item_id,**{k:v for k,v in m.items() if v is not None}})
+    elif a.cmd=="source-analyzed":
+        endpoint=os.environ.get("MESAAMO_ANALYSIS_ENDPOINT",DEFAULT_ANALYSIS_ENDPOINT)
+        payload={"action":"source_analyzed","item_id":a.item_id,"observed_summary":a.summary,"source_disposition":a.disposition}
+        req=urllib.request.Request(endpoint,data=json.dumps(payload).encode(),method="POST",headers={"Authorization":f"Bearer {token()}","Content-Type":"application/json","User-Agent":f"MesaAMO-AgentTool/{VERSION}"})
+        try:
+            with urllib.request.urlopen(req,timeout=25) as r: print(r.read().decode())
+        except urllib.error.HTTPError as e:
+            print(e.read().decode() or str(e),file=sys.stderr); raise SystemExit(e.code)
     elif a.cmd=="capability-create": call("capability_create",{"source_item_id":a.source_item_id,"title":a.title,"description":a.description,"capability_slug":a.slug,"decision":a.decision,"targets":a.target,"route_summary":a.route})
     elif a.cmd=="capability-list": call("capability_list",{"source_item_id":a.source} if a.source else {})
     elif a.cmd=="capability-claim": call("capability_claim",{"capability_id":a.capability_id})
