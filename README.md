@@ -33,11 +33,50 @@ Podemos empezar desde una idea, un proceso manual, una herramienta que ya existe
 
 ---
 
+## Proyecto destacado · MiDispositivo
+
+<table>
+<tr>
+<td width="58%" valign="top">
+
+### 🖥️ Tu equipo. Tu red. En un vistazo.
+
+**MiDispositivo** genera un reporte común desde Android/Termux, Windows, macOS y Linux con información útil para soporte y diagnóstico:
+
+- sistema operativo y arquitectura;
+- CPU, memoria y disco;
+- IP local, gateway y DNS;
+- IP pública, proveedor y ubicación aproximada **sólo si el usuario activa el modo online**;
+- JSON compatible entre plataformas;
+- visor HTML local con identidad DesarrollAMO.
+
+[**Abrir MiDispositivo →**](https://github.com/amoedo7/landings/tree/main/demos/midispositivo)
+
+</td>
+<td width="42%" valign="top">
+
+```text
+ANDROID / TERMUX ─┐
+WINDOWS ──────────┤
+macOS ────────────┼──→ mismo schema JSON
+LINUX ────────────┘        ↓
+                      visor local
+```
+
+**Privacidad por defecto**  
+`sin MAC` · `sin SSID` · `sin GPS exacto` · `sin lookup externo`
+
+</td>
+</tr>
+</table>
+
+---
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/amoedo7/landings/main/assets/github/labs.svg" width="100%" alt="DesarrollAMO Labs · Demos funcionales" />
 </div>
 
-## Tres cosas que podés revisar ahora
+## Demos que podés revisar ahora
 
 <table>
 <tr>
@@ -90,18 +129,34 @@ No obligamos al problema a adaptarse a una sola herramienta. Cuando una operaci�
 ```text
 MISMA NECESIDAD
       ↓
-ANDROID · WINDOWS · LINUX · WEB
+ANDROID · WINDOWS · LINUX · macOS · WEB
       ↓
 IMPLEMENTACIONES ADECUADAS AL ENTORNO
       ↓
 RESULTADO COMPATIBLE Y VERIFICABLE
 ```
 
-El repositorio público de demos ya incluye validación automática en **Ubuntu, macOS y Windows** para comprobar que implementaciones diferentes produzcan la misma evidencia de integridad.
+El repositorio público de demos incluye validación automática en **Ubuntu, macOS y Windows** para comprobar contratos y comportamiento básico en más de un sistema operativo.
+
+---
+
+## Actividad & mediciones
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=amoedo7&show_icons=true&hide_border=true&bg_color=07111f&title_color=67d2ff&text_color=f7f9fc&icon_color=f16ab5" alt="Estadísticas públicas de GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amoedo7&layout=compact&hide_border=true&bg_color=07111f&title_color=67d2ff&text_color=f7f9fc" alt="Lenguajes públicos en GitHub" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=amoedo7&hide_border=true&background=07111F&ring=F16AB5&fire=F16AB5&currStreakLabel=67D2FF&sideLabels=F7F9FC&dates=8FA5BC&currStreakNum=F7F9FC&sideNums=F7F9FC" alt="Racha de actividad pública" />
+</div>
 
 ---
 
 ## Trabajo visible
+
+### [MiDispositivo](https://github.com/amoedo7/landings/tree/main/demos/midispositivo)
+Diagnóstico multiplataforma de dispositivo y red con salida JSON común y visor local.
 
 ### [Landings / DesarrollAMO Labs](https://github.com/amoedo7/landings)
 Showcase público, identidad visual, componentes reutilizables y demos verificables.
@@ -126,7 +181,7 @@ La entrega importa tanto como el código: una solución tiene que poder abrirse,
 
 ### Tecnología que aparece en el ecosistema
 
-`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Bash` · `PowerShell` · `Linux` · `Termux` · `GitHub Actions` · `PostgreSQL` · `Supabase` · `Netlify` · `APIs` · `JSON`
+`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Bash` · `PowerShell` · `Linux` · `macOS` · `Termux` · `GitHub Actions` · `PostgreSQL` · `Supabase` · `Netlify` · `APIs` · `JSON`
 
 ---
 
