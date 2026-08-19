@@ -5,7 +5,7 @@
 
   **Diseñamos y construimos herramientas digitales para problemas reales.**
 
-  [🌐 desarrollamo.com.ar](https://desarrollamo.com.ar/) · [🧪 DesarrollAMO Labs](https://github.com/amoedo7/landings/tree/main/demos) · [💻 Repositorios](https://github.com/amoedo7?tab=repositories)
+  [🌐 desarrollamo.com.ar](https://desarrollamo.com.ar/) · [🧪 DesarrollAMO Labs](https://github.com/amoedo7/DesarrollAMO-Labs) · [💻 Repositorios](https://github.com/amoedo7?tab=repositories)
 </div>
 
 ---
@@ -14,7 +14,7 @@
 
 DesarrollAMO trabaja sobre problemas que terminan convertidos en **software, automatización, integraciones y sistemas**.
 
-Podemos empezar desde una idea, un proceso manual, una herramienta que ya existe pero quedó corta, o una operación que necesita conectar dispositivos y datos.
+Podemos empezar desde una idea, un proceso manual, una herramienta que quedó corta o una operación que necesita conectar dispositivos y datos.
 
 > **La tecnología se elige después de entender el problema.**
 
@@ -33,6 +33,28 @@ Podemos empezar desde una idea, un proceso manual, una herramienta que ya existe
 
 ---
 
+## Una suite para entender el entorno
+
+No son nombres vacíos: cada repo responde una pregunta concreta y usa contratos JSON versionados para que los resultados puedan combinarse.
+
+| | Proyecto | Pregunta |
+|---|---|---|
+| 🖥️ | **[MiDispositivo](https://github.com/amoedo7/MiDispositivo)** | ¿Qué máquina tengo delante? |
+| 🌐 | **[MiRed](https://github.com/amoedo7/MiRed)** | ¿Cómo está conectándose? |
+| ⚙️ | **[MiSistema](https://github.com/amoedo7/MiSistema)** | ¿Qué puede ejecutar? |
+| 🔎 | **[MiWeb](https://github.com/amoedo7/MiWeb)** | ¿Cómo está esta web? |
+| 📁 | **[MiArchivos](https://github.com/amoedo7/MiArchivos)** | ¿Qué ocupa y cómo está organizado? |
+| 🔌 | **[MiAPI](https://github.com/amoedo7/MiAPI)** | ¿Cómo responde este endpoint? |
+| 🧭 | **[DiagnosticoAMO](https://github.com/amoedo7/DiagnosticoAMO)** | ¿Qué significa todo junto? |
+
+<div align="center">
+
+**dispositivo + red + runtimes → evidencia común → diagnóstico**
+
+</div>
+
+---
+
 ## Proyecto destacado · MiDispositivo
 
 <table>
@@ -41,7 +63,7 @@ Podemos empezar desde una idea, un proceso manual, una herramienta que ya existe
 
 ### 🖥️ Tu equipo. Tu red. En un vistazo.
 
-**MiDispositivo** genera un reporte común desde Android/Termux, Windows, macOS y Linux con información útil para soporte y diagnóstico:
+**MiDispositivo** genera un reporte común para Android/Termux, Windows, macOS y Linux con información útil para soporte y diagnóstico:
 
 - sistema operativo y arquitectura;
 - CPU, memoria y disco;
@@ -50,7 +72,7 @@ Podemos empezar desde una idea, un proceso manual, una herramienta que ya existe
 - JSON compatible entre plataformas;
 - visor HTML local con identidad DesarrollAMO.
 
-[**Abrir MiDispositivo →**](https://github.com/amoedo7/landings/tree/main/demos/midispositivo)
+[**Abrir MiDispositivo →**](https://github.com/amoedo7/MiDispositivo)
 
 </td>
 <td width="42%" valign="top">
@@ -76,45 +98,11 @@ LINUX ────────────┘        ↓
   <img src="https://raw.githubusercontent.com/amoedo7/landings/main/assets/github/labs.svg" width="100%" alt="DesarrollAMO Labs · Demos funcionales" />
 </div>
 
-## Demos que podés revisar ahora
+## Demos & experimentos
 
-<table>
-<tr>
-<td width="33%" valign="top">
+**[DesarrollAMO-Labs](https://github.com/amoedo7/DesarrollAMO-Labs)** es el catálogo para piezas pequeñas que demuestran una capacidad sin necesitar todavía un producto separado.
 
-### 🔗 Cross-device URL Check
-
-Un mismo chequeo HTTP desde Android/Termux, Linux/macOS, Windows y Python, conservando el mismo contrato JSON.
-
-[**Abrir demo →**](https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check)
-
-</td>
-<td width="33%" valign="top">
-
-### 🔐 File Integrity · SHA-256
-
-Verificación local de archivos mediante Bash, PowerShell y Python, con autoprueba y CI multiplataforma.
-
-[**Abrir demo →**](https://github.com/amoedo7/landings/tree/main/demos/file-integrity)
-
-</td>
-<td width="33%" valign="top">
-
-### 🧰 Browser Data Toolbox
-
-JSON, SHA-256, Base64 e inspección de URLs en una interfaz responsive que funciona sin backend.
-
-[**Abrir demo →**](https://github.com/amoedo7/landings/tree/main/demos/browser-data-toolbox)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-**[Explorar DesarrollAMO Labs →](https://github.com/amoedo7/landings/tree/main/demos)**
-
-</div>
+El material público existente incluye chequeos HTTP multiplataforma, integridad SHA-256, utilidades de navegador y visores técnicos. Las piezas que demuestran una capacidad reutilizable pasan a tener repo propio; las demás permanecen en Labs.
 
 ---
 
@@ -124,19 +112,19 @@ JSON, SHA-256, Base64 e inspección de URLs en una interfaz responsive que funci
 
 ## Multiplataforma cuando el problema lo necesita
 
-No obligamos al problema a adaptarse a una sola herramienta. Cuando una operación mezcla celulares, Windows, Linux, web o servidores, buscamos que las implementaciones compartan **el mismo comportamiento observable y contratos compatibles**.
+No obligamos al problema a adaptarse a una sola herramienta. Cuando una operación mezcla celulares, Windows, Linux, macOS, web o servidores, buscamos que las implementaciones compartan **comportamiento observable y contratos compatibles**.
 
 ```text
 MISMA NECESIDAD
       ↓
 ANDROID · WINDOWS · LINUX · macOS · WEB
       ↓
-IMPLEMENTACIONES ADECUADAS AL ENTORNO
+IMPLEMENTACIÓN ADECUADA AL ENTORNO
       ↓
 RESULTADO COMPATIBLE Y VERIFICABLE
 ```
 
-El repositorio público de demos incluye validación automática en **Ubuntu, macOS y Windows** para comprobar contratos y comportamiento básico en más de un sistema operativo.
+Los repos nuevos incluyen workflows de GitHub Actions preparados para validar sus smoke tests en Ubuntu, macOS y Windows. El estado de cada ejecución se ve en el badge del repositorio correspondiente.
 
 ---
 
@@ -155,17 +143,17 @@ El repositorio público de demos incluye validación automática en **Ubuntu, ma
 
 ## Trabajo visible
 
-### [MiDispositivo](https://github.com/amoedo7/landings/tree/main/demos/midispositivo)
-Diagnóstico multiplataforma de dispositivo y red con salida JSON común y visor local.
+### [DesarrollAMO Labs](https://github.com/amoedo7/DesarrollAMO-Labs)
+Catálogo de demos pequeñas y puerta de entrada a la suite pública.
 
-### [Landings / DesarrollAMO Labs](https://github.com/amoedo7/landings)
-Showcase público, identidad visual, componentes reutilizables y demos verificables.
+### [Landings](https://github.com/amoedo7/landings)
+Infraestructura web reutilizable, identidad visual y material demostrativo.
 
 ### [CobrAMO](https://cobramo.netlify.app/)
 Interfaz desplegada para centralizar alternativas y referencias de cobro.
 
 ### [Inventario técnico](PROJECTS.md)
-La cuenta conserva también prototipos, experimentos y etapas anteriores. El inventario separa lo actual de lo histórico para no presentar como producto algo que no lo es.
+La cuenta conserva también prototipos, experimentos y etapas anteriores. El inventario los separa del trabajo actual para no presentar como producto algo que no lo es.
 
 ---
 
