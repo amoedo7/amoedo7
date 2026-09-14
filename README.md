@@ -184,3 +184,15 @@ La entrega importa tanto como el código: una solución tiene que poder abrirse,
 <sub>DesarrollAMO · Software · automatización · sistemas</sub>
 
 </div>
+
+
+---
+
+## Estado de MVPs del ecosistema
+
+El portafolio ya no se infiere por el nombre de los repositorios.
+
+- [MVP_PORTFOLIO.md](MVP_PORTFOLIO.md) — mapa humano de productos, candidatos, infraestructura, históricos y placeholders.
+- [ECOSYSTEM_MVP.json](ECOSYSTEM_MVP.json) — índice legible por máquina para DesarrollAMO OS, IAMO y automatizaciones.
+
+Regla: **repo existente ≠ producto terminado**. Un MVP sólo pasa a operable cuando su flujo mínimo puede probarse de punta a punta con evidencia real.
