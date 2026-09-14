@@ -1,0 +1,365 @@
+{
+  "schema": "desarrollamo.mvp-portfolio.v1",
+  "updated_at": "2026-09-13",
+  "rules": {
+    "operable": "flujo mínimo completo y verificable",
+    "candidate": "funciona pero falta evidencia/release/verificación",
+    "construction": "implementación sustancial con circuito incompleto",
+    "infrastructure": "habilita otros MVP; no es producto final",
+    "historical": "preservado; no reactivar automáticamente",
+    "placeholder": "sin implementación suficiente"
+  },
+  "core": [
+    {
+      "repo": "amoedo7/EscritoriAMO",
+      "name": "DesarrollAMO OS",
+      "status": "construction",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PlataformAMO",
+      "status": "construction",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/IAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/RaizAMO",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CircuitAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PasoaPasAMO",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CerebrAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MesaIAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/SegurAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/DepositAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/RankingIAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/IdeAMO",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/DesarrollAMO-Labs",
+      "status": "operable",
+      "mvp": "MVP.md"
+    }
+  ],
+  "distribution": [
+    {
+      "repo": "amoedo7/StoreAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/StoreAMO-Web",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/StoreAMO-Catalog",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/StoreAMO-Verify",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/StoreAMO-Install",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "desarrollamo/storeamo",
+      "status": "operable",
+      "mvp": "MVP.md"
+    }
+  ],
+  "commerce": [
+    {
+      "repo": "amoedo7/CobrAMO",
+      "status": "construction",
+      "blocker": "production source not reconciled",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PagoKitAMO",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CAMO",
+      "status": "construction",
+      "mvp": "MVP.md"
+    }
+  ],
+  "diagnostics": [
+    {
+      "repo": "amoedo7/MiDispositivo",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MiRed",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MiSistema",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MiWeb",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MiArchivos",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/MiAPI",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/DiagnosticoAMO",
+      "status": "operable",
+      "mvp": "MVP.md"
+    }
+  ],
+  "android_utilities": [
+    {
+      "repo": "amoedo7/AlarmAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/LinternAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CalendAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/RelojAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CalculAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CronAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/GastAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/HabitAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/NivelAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PorcentAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/ContAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/TemporizAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/DadosAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/SorteAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/ContrasenAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/TareasAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/NotasAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/BrujulAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/GeneralAMO",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/QRAMOMini",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/ConversAMO",
+      "status": "construction",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/Chessi",
+      "status": "candidate",
+      "mvp": "MVP.md"
+    }
+  ],
+  "public_identity": [
+    {
+      "repo": "desarrollamo/branding",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "desarrollamo/design-system",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "desarrollamo/web",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "desarrollamo/desarrollamo",
+      "status": "operable",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "desarrollamo/.github",
+      "status": "infrastructure",
+      "mvp": "MVP.md"
+    }
+  ],
+  "historical": [
+    {
+      "repo": "amoedo7/AutoDesarrollAMO",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/DesarrollAmo",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/CriptAmo",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/ApostAmo",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/Armacabeza",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/Eros",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/Frases",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/termuxschool",
+      "status": "historical",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PidAmo",
+      "status": "historical",
+      "mvp": "MVP.md"
+    }
+  ],
+  "placeholders": [
+    {
+      "repo": "amoedo7/PidAmoFrontend",
+      "status": "placeholder",
+      "mvp": "MVP.md"
+    },
+    {
+      "repo": "amoedo7/PidAmoBackend",
+      "status": "placeholder",
+      "mvp": "MVP.md"
+    }
+  ]
+}
