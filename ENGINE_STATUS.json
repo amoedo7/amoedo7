@@ -1,6 +1,6 @@
 {
-  "updated_at":"2026-09-14T12:26:14-03:00",
-  "run_count":9,
+  "updated_at":"2026-09-14T13:31:00-03:00",
+  "run_count":10,
   "engine_mode":"normal",
   "last_primary_workstream":"storeamo-catalog",
   "portfolio":{
@@ -19,11 +19,11 @@
     "summary":"Consolidar fuentes claras, circuito empresarial operable, seguridad básica, agentes trazables y mejora continua verificable."
   },
   "recent_actions":[
-    {"at":"2026-09-14T06:22:20-03:00","summary":"Una superficie pública fue reclasificada por propósito y contenido verificados; autenticación no comprobada en otras superficies permanece UNKNOWN."},
     {"at":"2026-09-14T07:25:49-03:00","summary":"Se corrigió metadata Android de una app para publicar su version_code canónico; quedó pendiente verificación downstream."},
     {"at":"2026-09-14T08:28:30-03:00","summary":"El catálogo se regeneró y se reforzó la publicación frente a cambios concurrentes; la ejecución de control terminó correctamente."},
     {"at":"2026-09-14T09:37:06-03:00","summary":"La deuda específica de version_code anterior fue verificada y pasó a maintenance sin convertir SKIPs no relacionados en PASS."},
     {"at":"2026-09-14T11:20:24-03:00","summary":"Se corrigió la fuente de metadata de StoreAMO para declarar su version_code Android canónico; verificación downstream sigue abierta."},
-    {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó un rerun histórico como prueba de frescura: generó y validó correctamente, pero no pudo publicar al partir de un SHA obsoleto. La verificación requiere una ejecución nueva desde main."}
+    {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó un rerun histórico como prueba de frescura; la verificación requiere ejecución nacida desde el estado actual."},
+    {"at":"2026-09-14T13:31:00-03:00","summary":"Una regeneración limpia desde el estado actual verificó el version_code corregido sin FAIL; la publicación pública sigue pendiente y se mantiene en verifying."}
   ]
 }
