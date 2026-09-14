@@ -1,6 +1,6 @@
 {
-  "updated_at":"2026-09-14T14:25:00-03:00",
-  "run_count":11,
+  "updated_at":"2026-09-14T15:20:22-03:00",
+  "run_count":12,
   "engine_mode":"normal",
   "last_primary_workstream":"public-internal-surfaces",
   "portfolio":{
@@ -19,11 +19,11 @@
     "summary":"Consolidar fuentes claras, circuito empresarial operable, seguridad básica, agentes trazables y mejora continua verificable."
   },
   "recent_actions":[
-    {"at":"2026-09-14T09:37:06-03:00","summary":"Una deuda específica de metadata Android fue verificada y pasó a maintenance sin convertir deuda independiente en PASS."},
     {"at":"2026-09-14T11:20:24-03:00","summary":"Se corrigió metadata canónica de una app distribuible; la comprobación downstream quedó separada de la edición de fuente."},
     {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó una verificación histórica como prueba de frescura y se reforzó el criterio de ejecución desde estado actual."},
-    {"at":"2026-09-14T13:31:00-03:00","summary":"Una regeneración limpia verificó la corrección sin FAIL; la publicación pública quedó explícitamente pendiente."},
+    {"at":"2026-09-14T13:31:00-03:00","summary":"Una regeneración limpia verificó una corrección sin FAIL; la publicación pública quedó explícitamente pendiente."},
     {"at":"2026-09-14T14:25:00-03:00","summary":"Se separaron protección de borde, autenticación de aplicación, propósito de contenido y provenance para superficies públicas con nombres internos."},
-    {"at":"2026-09-14T14:25:00-03:00","summary":"Dos superficies públicas quedaron con postura de borde y provenance verificadas, manteniendo autenticación/contenido en UNKNOWN donde no hubo inspección suficiente."}
+    {"at":"2026-09-14T14:25:00-03:00","summary":"Dos superficies públicas quedaron con postura de borde y provenance verificadas, manteniendo autenticación/contenido en UNKNOWN donde no hubo inspección suficiente."},
+    {"at":"2026-09-14T15:20:22-03:00","summary":"Se acotaron dos superficies públicas adicionales con evidencia de acceso y provenance; una señal de propósito comercial quedó explícitamente como inferencia, no PASS."}
   ]
 }
