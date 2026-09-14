@@ -1,61 +1,29 @@
 {
-  "schema": "desarrollamo.engine.public-status.v1",
-  "updated_at": "2026-09-14T11:20:24-03:00",
-  "run_count": 8,
-  "engine_mode": "normal",
-  "last_primary_workstream": "damo-runtime-provenance",
-  "portfolio": {
-    "open_opportunities": 16,
-    "qualified": 10,
-    "blocked": 3,
-    "verifying": 1,
-    "maintenance": 2,
-    "systemic": 14,
-    "oldest_open_at": "2026-09-14T00:19:00-03:00"
+  "updated_at":"2026-09-14T12:26:14-03:00",
+  "run_count":9,
+  "engine_mode":"normal",
+  "last_primary_workstream":"storeamo-catalog",
+  "portfolio":{
+    "open_opportunities":16,
+    "qualified":10,
+    "blocked":3,
+    "verifying":1,
+    "maintenance":2,
+    "systemic":14,
+    "oldest_open_at":"2026-09-14T00:19:00-03:00"
   },
-  "mission": {
-    "id": "operational-readiness-2026-09-15",
-    "title": "DesarrollAMO operacional",
-    "target_at": "2026-09-15T09:00:00-03:00",
-    "status": "active"
+  "mission":{
+    "title":"DesarrollAMO operacional",
+    "status":"active",
+    "target_at":"2026-09-15T09:00:00-03:00",
+    "summary":"Consolidar fuentes claras, circuito empresarial operable, seguridad básica, agentes trazables y mejora continua verificable."
   },
-  "recent_actions": [
-    {
-      "at": "2026-09-14T05:24:10-03:00",
-      "asset": "cross-repo Android CI",
-      "result": "root_cause_class_isolated_and_resilience_policy_adopted",
-      "verification": "Three independent runners clustered; later uploads recovered without deterministic upload fix"
-    },
-    {
-      "at": "2026-09-14T06:22:20-03:00",
-      "asset": "auditoria-desarrollamo",
-      "result": "verified_reclassified_public_by_design",
-      "verification": "Netlify access metadata + fetched homepage purpose/content"
-    },
-    {
-      "at": "2026-09-14T07:25:49-03:00",
-      "asset": "amoedo7/GeneralAMO → StoreAMO-Catalog",
-      "result": "material_fix_pending_downstream_verification",
-      "verification": "Source identity verified; downstream scheduled catalog regeneration not yet run"
-    },
-    {
-      "at": "2026-09-14T08:28:30-03:00",
-      "asset": "amoedo7/StoreAMO-Catalog",
-      "result": "catalog_regenerated_and_ci_race_repaired_full_autocheck_pending",
-      "verification": "discover-apps run 34838239934 success; refreshed catalog commit 4ce352b119a1fd6a8f186fa0153b3f0e7cb18ce5 publishes GeneralAMO version_code=1016"
-    },
-    {
-      "at": "2026-09-14T09:37:06-03:00",
-      "asset": "GeneralAMO → StoreAMO-Catalog → StoreAMO-Verify",
-      "result": "verified_success_moved_to_maintenance",
-      "verification": "fresh canonical verifier run: PASS=1004 FAIL=0 SKIP=2 exit=0; GeneralAMO version_code 1016 PASS"
-    },
-    {
-      "at": "2026-09-14T11:20:24-03:00",
-      "asset": "amoedo7/StoreAMO",
-      "result": "source_metadata_repaired_pending_downstream_verification",
-      "verification": "StoreAMO production-update workflow asserts versionCode=430087 for v0.4.3.87; storeamo.json now matches"
-    }
-  ],
-  "note": "Sanitized public mirror. No secrets, private paths, credentials or client data."
+  "recent_actions":[
+    {"at":"2026-09-14T06:22:20-03:00","summary":"Una superficie pública fue reclasificada por propósito y contenido verificados; autenticación no comprobada en otras superficies permanece UNKNOWN."},
+    {"at":"2026-09-14T07:25:49-03:00","summary":"Se corrigió metadata Android de una app para publicar su version_code canónico; quedó pendiente verificación downstream."},
+    {"at":"2026-09-14T08:28:30-03:00","summary":"El catálogo se regeneró y se reforzó la publicación frente a cambios concurrentes; la ejecución de control terminó correctamente."},
+    {"at":"2026-09-14T09:37:06-03:00","summary":"La deuda específica de version_code anterior fue verificada y pasó a maintenance sin convertir SKIPs no relacionados en PASS."},
+    {"at":"2026-09-14T11:20:24-03:00","summary":"Se corrigió la fuente de metadata de StoreAMO para declarar su version_code Android canónico; verificación downstream sigue abierta."},
+    {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó un rerun histórico como prueba de frescura: generó y validó correctamente, pero no pudo publicar al partir de un SHA obsoleto. La verificación requiere una ejecución nueva desde main."}
+  ]
 }
