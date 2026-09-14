@@ -1,8 +1,8 @@
 {
-  "updated_at":"2026-09-14T13:31:00-03:00",
-  "run_count":10,
+  "updated_at":"2026-09-14T14:25:00-03:00",
+  "run_count":11,
   "engine_mode":"normal",
-  "last_primary_workstream":"storeamo-catalog",
+  "last_primary_workstream":"public-internal-surfaces",
   "portfolio":{
     "open_opportunities":16,
     "qualified":10,
@@ -19,11 +19,11 @@
     "summary":"Consolidar fuentes claras, circuito empresarial operable, seguridad básica, agentes trazables y mejora continua verificable."
   },
   "recent_actions":[
-    {"at":"2026-09-14T07:25:49-03:00","summary":"Se corrigió metadata Android de una app para publicar su version_code canónico; quedó pendiente verificación downstream."},
-    {"at":"2026-09-14T08:28:30-03:00","summary":"El catálogo se regeneró y se reforzó la publicación frente a cambios concurrentes; la ejecución de control terminó correctamente."},
-    {"at":"2026-09-14T09:37:06-03:00","summary":"La deuda específica de version_code anterior fue verificada y pasó a maintenance sin convertir SKIPs no relacionados en PASS."},
-    {"at":"2026-09-14T11:20:24-03:00","summary":"Se corrigió la fuente de metadata de StoreAMO para declarar su version_code Android canónico; verificación downstream sigue abierta."},
-    {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó un rerun histórico como prueba de frescura; la verificación requiere ejecución nacida desde el estado actual."},
-    {"at":"2026-09-14T13:31:00-03:00","summary":"Una regeneración limpia desde el estado actual verificó el version_code corregido sin FAIL; la publicación pública sigue pendiente y se mantiene en verifying."}
+    {"at":"2026-09-14T09:37:06-03:00","summary":"Una deuda específica de metadata Android fue verificada y pasó a maintenance sin convertir deuda independiente en PASS."},
+    {"at":"2026-09-14T11:20:24-03:00","summary":"Se corrigió metadata canónica de una app distribuible; la comprobación downstream quedó separada de la edición de fuente."},
+    {"at":"2026-09-14T12:26:14-03:00","summary":"Se descartó una verificación histórica como prueba de frescura y se reforzó el criterio de ejecución desde estado actual."},
+    {"at":"2026-09-14T13:31:00-03:00","summary":"Una regeneración limpia verificó la corrección sin FAIL; la publicación pública quedó explícitamente pendiente."},
+    {"at":"2026-09-14T14:25:00-03:00","summary":"Se separaron protección de borde, autenticación de aplicación, propósito de contenido y provenance para superficies públicas con nombres internos."},
+    {"at":"2026-09-14T14:25:00-03:00","summary":"Dos superficies públicas quedaron con postura de borde y provenance verificadas, manteniendo autenticación/contenido en UNKNOWN donde no hubo inspección suficiente."}
   ]
 }
