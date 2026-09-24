@@ -1,1 +1,46 @@
-{"updated_at":"2026-09-24T16:21:48-03:00","run_count":225,"engine_mode":"normal","last_primary_workstream":"source-drift","portfolio":{"open_opportunities":17,"qualified":10,"blocked":3,"verifying":0,"maintenance":6,"systemic":15,"oldest_open_at":"2026-09-14T00:19:00-03:00"},"mission":{"title":"DesarrollAMO operacional","status":"review_required","target_at":"2026-09-15T09:00:00-03:00","summary":"El objetivo conserva intención y criterios pero requiere replanning; no recibe boost mientras está en revisión."},"recent_actions":[{"at":"2026-09-24T09:25:53-03:00","summary":"PlataformAMO quedó revalidado desde su worktree autorizado: fuente limpia/sincronizada y checks de regresión/AdsAMO PASS; deploy provenance sigue separado."},{"at":"2026-09-24T10:24:42-03:00","summary":"Branding y Design System mantienen sus fuentes canónicas sin cambios; HEALTHY/NO_CHANGE, sin commit cosmético."},{"at":"2026-09-24T11:24:30-03:00","summary":"ArbitrAMO quedó clasificado con evidencia fresca como fuente local activa no publicada; fuente canónica y deploy provenance siguen UNKNOWN."},{"at":"2026-09-24T12:26:15-03:00","summary":"Release guardian estaba DUE: la última ejecución Android CI reparada continúa completed/success y no apareció una ejecución posterior ni recurrencia; HEALTHY/NO_CHANGE."},{"at":"2026-09-24T13:24:37-03:00","summary":"Discovery controlado del workspace local: El3Imm respondió online y el inventario de procesos fue legible; se observó el runtime de escritorio activo. No se infirió causa raíz histórica ni se fabricó cambio."},{"at":"2026-09-24T16:21:48-03:00","summary":"Source drift estaba DUE; anti-churn evitó repetir el mismo probe de provenance sin trigger nuevo. No hubo cambio de producto ni falso PASS."}]}
+{
+  "updated_at": "2026-09-24T17:22:49-03:00",
+  "run_count": 224,
+  "engine_mode": "normal",
+  "last_primary_workstream": "damo-runtime-provenance",
+  "portfolio": {
+    "open_opportunities": 17,
+    "qualified": 10,
+    "blocked": 3,
+    "verifying": 0,
+    "maintenance": 6,
+    "systemic": 15
+  },
+  "mission": {
+    "id": "operational-readiness-2026-09-15",
+    "status": "review_required",
+    "summary": "Operational readiness remains under review; expired target gives no mission scoring boost."
+  },
+  "recent_actions": [
+    {
+      "at": "2026-09-24T10:24:42-03:00",
+      "summary": "Branding y Design System mantienen sus fuentes canónicas sin cambios; HEALTHY/NO_CHANGE, sin commit cosmético."
+    },
+    {
+      "at": "2026-09-24T11:24:30-03:00",
+      "summary": "ArbitrAMO quedó clasificado con evidencia fresca como fuente local activa no publicada; fuente canónica y deploy provenance siguen UNKNOWN."
+    },
+    {
+      "at": "2026-09-24T12:26:15-03:00",
+      "summary": "Release guardian estaba DUE: la última ejecución Android CI reparada continúa completed/success y no apareció una ejecución posterior ni recurrencia; HEALTHY/NO_CHANGE."
+    },
+    {
+      "at": "2026-09-24T13:24:37-03:00",
+      "summary": "Discovery controlado del workspace local: El3Imm respondió online y el inventario de procesos fue legible; se observó el runtime de escritorio activo. No se infirió causa raíz histórica ni se fabricó cambio."
+    },
+    {
+      "at": "2026-09-24T16:21:48-03:00",
+      "summary": "Source drift estaba DUE; anti-churn evitó repetir el mismo probe de provenance sin trigger nuevo. No hubo cambio de producto ni falso PASS."
+    },
+    {
+      "at": "2026-09-24T17:22:49-03:00",
+      "workstream": "damo-runtime-provenance",
+      "result": "Runtime identity verified live; canonical policy source remains unknown."
+    }
+  ]
+}
