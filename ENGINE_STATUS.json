@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:25:46-03:00",
-  "run_count": 227,
+  "updated_at": "2026-09-25T04:20:36-03:00",
+  "run_count": 226,
   "engine_mode": "normal",
   "last_primary_workstream": "loop-self-audit",
   "portfolio": {
@@ -17,10 +17,6 @@
     "summary": "Operational readiness remains under review; expired target gives no mission scoring boost."
   },
   "recent_actions": [
-    {
-      "at": "2026-09-24T11:24:30-03:00",
-      "summary": "Local source classification refreshed; canonical source remains unresolved."
-    },
     {
       "at": "2026-09-24T12:26:15-03:00",
       "summary": "Release health rechecked; no recurrence observed."
@@ -40,6 +36,10 @@
     {
       "at": "2026-09-25T00:25:46-03:00",
       "summary": "Self-audit detected stale public engine mirror and attempted reconciliation; canonical checkpoint write was blocked."
+    },
+    {
+      "at": "2026-09-25T04:20:36-03:00",
+      "summary": "Self-audit reconciled the public mirror to the last persisted canonical checkpoint after a blocked checkpoint write."
     }
   ]
 }
