@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-25T04:20:36-03:00",
-  "run_count": 226,
+  "updated_at": "2026-09-25T11:21:29-03:00",
+  "run_count": 227,
   "engine_mode": "normal",
-  "last_primary_workstream": "loop-self-audit",
+  "last_primary_workstream": "release-guardian",
   "portfolio": {
     "open_opportunities": 17,
     "qualified": 10,
@@ -17,6 +17,10 @@
     "summary": "Operational readiness remains under review; expired target gives no mission scoring boost."
   },
   "recent_actions": [
+    {
+      "at": "2026-09-24T11:24:30-03:00",
+      "summary": "Local source gap classified with verified evidence; canonical source remains unresolved."
+    },
     {
       "at": "2026-09-24T12:26:15-03:00",
       "summary": "Release health rechecked; no recurrence observed."
@@ -34,12 +38,8 @@
       "summary": "Deploy inventory boundary refreshed; no destructive cleanup performed."
     },
     {
-      "at": "2026-09-25T00:25:46-03:00",
-      "summary": "Self-audit detected stale public engine mirror and attempted reconciliation; canonical checkpoint write was blocked."
-    },
-    {
-      "at": "2026-09-25T04:20:36-03:00",
-      "summary": "Self-audit reconciled the public mirror to the last persisted canonical checkpoint after a blocked checkpoint write."
+      "at": "2026-09-25T09:25:47-03:00",
+      "summary": "Canonical Android CI remains successful; no new execution or recurrence observed."
     }
   ]
 }
